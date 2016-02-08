@@ -21,7 +21,7 @@ export class AppComponent {
 
     constructor() {
         // we pass an empty gridOptions in, so we can grab the api out
-        this.gridOptions = {};
+        this.gridOptions = <GridOptions>{};
         this.createRowData();
         this.createColumnDefs();
         this.showGrid = true;
